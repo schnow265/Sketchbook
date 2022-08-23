@@ -4,9 +4,9 @@
   "version": "${version}",
 
   "name": "Sketchbook",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "This is a Testing space ",
   "authors": [
-    "Me!"
+    "TamSchnow265"
   ],
   "contact": {
     "homepage": "https://tamschnow265.github.io",
@@ -22,9 +22,6 @@
       "net.tamschnow265.sketchbook.drawbook"
     ]
   },
-  "mixins": [
-    "sketchbook.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.14.6",
