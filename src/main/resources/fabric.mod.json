@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "sketchbook",
+  "version": "${version}",
+
+  "name": "Sketchbook",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://tamschnow265.github.io",
+    "sources": "https://github.com/TamSchnow265/sketchbook"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/sketchbook/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.tamschnow265.sketchbook.drawbook"
+    ]
+  },
+  "mixins": [
+    "sketchbook.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
