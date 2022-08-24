@@ -1,6 +1,8 @@
 package net.tamschnow265.sketchbook;
 
 import net.fabricmc.api.ModInitializer;
+import net.tamschnow265.sketchbook.item.ModItems;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +21,8 @@ public class drawbook implements ModInitializer {
 
 		LOGGER.info("Opening Sketchbook...");
 
+		
+		ModItems.registerModItems();
 
 
 		LOGGER.info("Blueprints loaded!");
