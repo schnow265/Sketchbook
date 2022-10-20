@@ -26,13 +26,6 @@ repositories {
 		name = "Ladysnake Libs"
 		url = "https://ladysnake.jfrog.io/artifactory/mods"
 	}
-	maven {
-		url "https://maven.pkg.jetbrains.space/tamschnow265/p/skb/snowlib"
-		credentials {
-			username = spaceUsername
-			password = spacePassword
-		}
-	}
 }
 
 dependencies {
@@ -81,21 +74,5 @@ jar {
 
 // configure the maven publication
 publishing {
-	publications {
-		maven(MavenPublication) {
-			groupId = "org.tamschnow265"
-			artifactId = "sketchbook"
-			version = mod_version
-			from components.java
-		}
-	}
-	repositories {
-		maven {
-			url "https://maven.pkg.jetbrains.space/tamschnow265/p/skb/snowlib"
-			credentials {
-				username = spaceUsername
-				password = spacePassword
-			}
-		}
-	}
+	
 }
