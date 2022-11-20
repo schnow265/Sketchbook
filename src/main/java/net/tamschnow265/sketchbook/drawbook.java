@@ -2,7 +2,7 @@ package net.tamschnow265.sketchbook;
 
 import net.fabricmc.api.ModInitializer;
 import net.tamschnow265.sketchbook.item.ModItems;
-
+import net.tamschnow265.sketchbook.enchantment.enchanter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +23,9 @@ public class drawbook implements ModInitializer {
 
 		
 		ModItems.registerModItems();
+		enchanter.registerEchanter();
+
+
 
 
 		LOGGER.info("Blueprints loaded!");

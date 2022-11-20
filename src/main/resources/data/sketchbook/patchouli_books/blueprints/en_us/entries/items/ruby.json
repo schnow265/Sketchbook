@@ -1,0 +1,13 @@
+{
+  "name": "Ruby",
+  "icon": "sketchbook:ruby",
+  "category": "sketchbook:moditems",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "sketchbook:ruby",
+      "title": "Ruby",
+      "text": "Used to trade with special villagers, the Block is Gold"
+    }
+  ]
+}

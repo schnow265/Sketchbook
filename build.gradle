@@ -42,8 +42,8 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19:3.1.16'
-	modImplementation "vazkii.patchouli:Patchouli:1.19.2-76"
 	modImplementation "dev.emi:trinkets:3.4.0"
+	modImplementation "vazkii.patchouli:Patchouli:1.19.2-77-FABRIC"
 }
 
 processResources {
