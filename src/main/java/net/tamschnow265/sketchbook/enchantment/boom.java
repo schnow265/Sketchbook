@@ -6,11 +6,12 @@ import net.minecraft.entity.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 
-public class boom {
-    public boom(Enchantment.Rarity weight, EnchantmentTarget weapon, EquipmentSlot... slot) {
-        super();
-    }
+public class boom extends Enchantment {
 
+
+    public boom(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
+        super(weight, type, slotTypes);
+    }
 
     public void atDamage(LivingEntity user, Entity target, int level) {
         if(!user.world.isClient()) {
@@ -211,6 +212,7 @@ public class boom {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
                         SpawnReason.TRIGGERED, true, true);
             }
+            super.onTargetDamaged(user, target, level);
         }
 
     }

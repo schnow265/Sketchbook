@@ -6,6 +6,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.tamschnow265.sketchbook.drawbook;
+import net.tamschnow265.sketchbook.enchantment.boom;
 
 public class enchanter {
 
@@ -13,7 +14,7 @@ public class enchanter {
 
     public static Enchantment LIGHTNING_STRIKER = register("lightning_striker", new LightningStriker(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
     public static Enchantment PISTONING = register("pistoning", new pistoning(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-    public static Enchantment BOOMER = register("boomer", new LightningStriker(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+    public static Enchantment BOOM = register("boom", new boom(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
 
 
     // End of custom Enchant Section
