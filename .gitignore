@@ -34,3 +34,7 @@ run/
 
 # snow-inc
 secrets/
+
+# JetBrains Fleet
+
+.fleet/
