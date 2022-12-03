@@ -36,9 +36,150 @@ public class boom extends Enchantment {
                         SpawnReason.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
                         SpawnReason.TRIGGERED, true, true);
-            }
-
-            if (level == 2) {
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
+                        SpawnReason.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
                         SpawnReason.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
@@ -76,6 +217,6 @@ public class boom extends Enchantment {
     }
 
     public int getMaxLevel() {
-        return 2;
+        return 1;
     }
 }
