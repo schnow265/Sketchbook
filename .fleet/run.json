@@ -1,5 +1,25 @@
 {
     "configurations": [
+        {
+        "type": "gradle",
+        "name": "Client",
+        "tasks": ["runClient"],
+    },
+    {
+        "type": "gradle",
+        "name": "Server",
+        "tasks": ["runServer"],
+    },
         
+    {
+        "type": "gradle",
+        "name": "Publish to Maven",
+        "tasks": ["publish"],
+    },
+    {
+        "type": "gradle",
+        "name": "Reload Sources",
+        "tasks": ["genSources"],
+        },
     ]
 }

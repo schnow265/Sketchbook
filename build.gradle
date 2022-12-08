@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
+    id "com.modrinth.minotaur" version "2.+"
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
@@ -91,4 +92,17 @@ publishing {
 			}
 		}
 	}
+}
+
+modrinth {
+    token.set(System.getenv(userToken))
+    projectId.set(projectID)
+    versionNumber.set(project.version.toString())
+    versionType.set("release")
+    gameVersions.addAll(listOf("1.19.2"))
+    loaders.add("fabric")
+    dependencies {
+        required.project("fabric-api")
+    }
+    uploadFile.set(tasks.remapJar.get())
 }
