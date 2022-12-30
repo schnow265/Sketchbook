@@ -18,4 +18,4 @@ jobs:
   
 
     - name: Publish on JetBrains Space
-      run: ./gradlew publish
+      run: gradle publish
