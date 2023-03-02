@@ -1,0 +1,79 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "sketchbook:item/amethyst_knuckles",
+		"particle": "sketchbook:item/amethyst_knuckles"
+	},
+	"elements": [
+		{
+			"name": "body",
+			"from": [7.5, -11, 7.5],
+			"to": [11.5, 20, 11.5],
+			"faces": {
+				"north": {"uv": [7.5, 3, 9.5, 16], "texture": "#0"},
+				"east": {"uv": [3.5, 3, 1.5, 16], "texture": "#0"},
+				"south": {"uv": [3.5, 3, 5.5, 16], "texture": "#0"},
+				"west": {"uv": [7.5, 3, 5.5, 16], "texture": "#0"},
+				"up": {"uv": [5.5, 3, 3.5, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [7.5, 1, 5.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "body",
+			"from": [7.5, 20, 11.5],
+			"to": [11.5, 22, 11.5],
+			"faces": {
+				"north": {"uv": [11.5, 3, 14, 4], "texture": "#0"},
+				"east": {"uv": [16, 3, 14, 4], "texture": "#0"},
+				"south": {"uv": [11.5, 3, 14, 4], "texture": "#0"},
+				"west": {"uv": [16, 3, 14, 4], "texture": "#0"},
+				"up": {"uv": [16, 4, 14, 3], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [16, 3, 14, 4], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-2.5, 90, -88],
+			"translation": [-1.6, -0.2, 11.5],
+			"scale": [1.1, 1, 1.1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-2.5, 90, -88],
+			"translation": [-1.6, -3.6, 11.5],
+			"scale": [1.1, 1, 1.1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, -45],
+			"translation": [-2.4, -1.5, 9],
+			"scale": [1, 1, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [-3.2, -3.5, 7.5],
+			"scale": [1, 1, 0.8]
+		},
+		"ground": {
+			"translation": [0, -7.5, 0]
+		},
+		"gui": {
+			"rotation": [0, 0, -50],
+			"translation": [-11, -6.25, 0],
+			"scale": [1.5, 1.3, 1.5]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [2.25, -14, 3],
+			"scale": [1.7, 1.5, 1.4]
+		}
+	},
+	"groups": [
+		{
+			"name": "body",
+			"origin": [0, 27, 0],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

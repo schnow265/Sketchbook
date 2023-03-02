@@ -2,14 +2,15 @@ package net.tamschnow265.sketchbook.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
+import net.minecraft.util.registry.*;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.tamschnow265.sketchbook.drawbook;
 
 public class ModItems {
     //Items
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings().group(ModItemGroup.SKBITEMS)));
-
+    public static final Item A_KNUCKLES = registerItem("amethyst_knuckles", new Item(new FabricItemSettings().group(ModItemGroup.SKCOMABT)));
+    public static final Item N_HAMMER = registerItem("netherite_hammer", new Item(new FabricItemSettings().group(ModItemGroup.SKCOMABT)));
 
 
 

@@ -1,7 +1,10 @@
 {
     "item.sketchbook.ruby": "Ruby",
+    "item.sketchbook.amethyst_knuckles": "Amethyst Knuckles",
+    "item.sketchbook.netherite_hammer": "Netherite Hammer",
 
     "itemGroup.sketchbook.items": "Items",
+    "itemGroup.sketchbook.combat": "The White Smith",
     "enchantment.sketchbook.pistoning": "Piston",
     "enchantment.sketchbook.boom": "BOOOM",
     "echantment.sketchbook.lightning_striker": "Thunder"
