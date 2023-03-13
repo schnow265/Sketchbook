@@ -9,27 +9,32 @@ public class pistoning extends Enchantment {
         super(weight, EnchantmentTarget.WEAPON, slot);
     }
 
+    @Override
     public int getMinPower(int level) {
         return 30 + 200 * (level + 500);
     }
 
+    @Override
     public int getMaxPower(int level) {
         return super.getMinPower(level) + 1000;
     }
 
+    @Override
     public int getMaxLevel() {
         return 5;
     }
 
-
+    @Override
     public boolean isTreasure() {
         return true;
     }
 
+    @Override
     public boolean isAvailableForEnchantedBookOffer() {
-        return false;
+        return true;
     }
 
+    @Override
     public boolean isAvailableForRandomSelection() {
         return false;
     }

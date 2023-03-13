@@ -1,0 +1,17 @@
+{
+    "name": "Netherite Hammer",
+    "icon": "sketchbook:netherite_hammer",
+    "category": "sketchbook:armory",
+    "pages": [
+
+      {
+        "name": "overview",
+        "type": "patchouli:spotlight",
+        "display": {
+          "title": "Netherite Hammer",
+          "item": "sketchbook:netherite_hammer",
+          "text": "The Hammer of the Depths. Forged in the Hellfire of the Nether."
+        }
+      }
+    ]
+  }

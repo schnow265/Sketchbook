@@ -32,7 +32,7 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
-	modImplementation "vazkii.patchouli:Patchouli:1.19.2-77-FABRIC"
+	modImplementation "vazkii.patchouli:Patchouli:1.19.2-78-FABRIC-SNAPSHOT"
 }
 
 processResources {
@@ -81,16 +81,3 @@ publishing {
 		}
 	}
 }
-
-//modrinth {
-//    token.set(System.getenv(userToken))
-//    projectId.set(projectID)
-//    versionNumber.set(project.version.toString())
-//    versionType.set("release")
-//    gameVersions.addAll(listOf("1.19.2"))
-//    loaders.add("fabric")
-//    dependencies {
-//        required.project("fabric-api")
-//    }
-//    uploadFile.set(tasks.remapJar.get())
-//}
