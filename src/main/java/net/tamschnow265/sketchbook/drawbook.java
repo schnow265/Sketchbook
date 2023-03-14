@@ -27,7 +27,6 @@ public class drawbook implements ModInitializer {
 
 
 
-
 		LOGGER.info("Blueprints loaded!");
 	}
 }

@@ -13,7 +13,7 @@
     "sources": "https://github.com/TamSchnow265/sketchbook"
   },
 
-  "license": "CC0-1.0",
+  "license": "GNU GPL",
   "icon": "assets/sketchbook/icon.png",
 
   "environment": "*",

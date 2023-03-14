@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nnn",
+    "nnn",
+    " / "
+  ],
+  "key": {
+    "n": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sketchbook:choppy",
+    "count": 1
+  }
+}

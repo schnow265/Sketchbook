@@ -4,9 +4,11 @@
     "item.sketchbook.netherite_hammer": "Netherite Hammer",
     "item.sketchbook.copper_c_axe": "Curved Copper Axe",
     "item.sketchbook.ruby_katana": "Ruby Katana",
+    "item.sketchbook.choppy": "Choppy",
     
     "itemGroup.sketchbook.items": "Items",
     "itemGroup.sketchbook.combat": "The White Smith",
+    "itemGroup.sketchbook.utility": "SnowTech Industries - Utilities",
     
     "enchantment.sketchbook.pistoning": "Piston",
     "enchantment.sketchbook.boom": "BOOOM",
