@@ -1,0 +1,1 @@
+execute as @s[scores={nbs_HarderBett=141440..141680,nbs_HarderBett_t=..1767}] run function sketchbook:dp/harder_better_faster_stronger/notes/1768
