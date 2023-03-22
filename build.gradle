@@ -71,7 +71,7 @@ publishing {
 		maven(MavenPublication) {
 			groupId = maven_group
 			artifactId = archives_base_name
-			version = archives_base_name
+			version = mod_version
 			from components.java
 		}
 	}
