@@ -1,31 +1,23 @@
-# skb/repo
-
-
+# Sketchbook
 
 ## Getting Started
 
-Download links:
+Downloading:
+* [GitHub Packages,(Newest Versions, unstable)](https://github.com/schnow265/Sketchbook/packages/)
+* [Releases(not the newest stuff, guarantee of supported Version)](https://github.com/schnow265/Sketchbook/releases)
 
-SSH clone URL: ssh://git@git.jetbrains.space/tamschnow265/skb/repo.git
-
-HTTPS clone URL: https://git.jetbrains.space/tamschnow265/skb/repo.git
-
-
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Prerequisites
+### Clients
 
-What things you need to install the software and how to install them.
+* [Fabric 1.19.2](https://fabricmc.net/use/installer/)
+* [REI](https://modrinth.com/mod/rei) (Optional)
 
-```
-Examples
-```
+### Servers (Self-Hosted)
 
-## Deployment
+* [Fabric Easy Installer](https://meta.fabricmc.net/v2/versions/loader/1.19.2/0.14.18/0.11.2/server/jar)
+* (When installed on the Client) [REI](https://modrinth.com/mod/rei)
 
-Add additional notes about how to deploy this on a production system.
+## Documentation
 
-## Resources
-
-Add links to external resources for this project, such as CI server, bug tracker, etc.
+[GitHub Wiki](https://github.com/schnow265/sketchbook/wiki)
