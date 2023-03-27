@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.tamschnow265.sketchbook.drawbook"
+      "net.schnow265.sketchbook.drawbook"
     ]
   },
 

@@ -1,11 +1,11 @@
-package net.tamschnow265.sketchbook.enchantment;
+package net.schnow265.sketchbook.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.tamschnow265.sketchbook.drawbook;
+import net.schnow265.sketchbook.drawbook;
 
 public class enchanter {
 

@@ -1,4 +1,4 @@
-package net.tamschnow265.sketchbook.item;
+package net.schnow265.sketchbook.item;
 
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -9,9 +9,9 @@ import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.registry.*;
 import net.minecraft.util.Identifier;
 
-import net.tamschnow265.sketchbook.drawbook;
-import net.tamschnow265.sketchbook.item.custom.ModAxeItem;
-import net.tamschnow265.sketchbook.item.custom.TreeChopper;
+import net.schnow265.sketchbook.drawbook;
+import net.schnow265.sketchbook.item.custom.ModAxeItem;
+import net.schnow265.sketchbook.item.custom.TreeChopper;
 
 public class ModItems {
     //Items
