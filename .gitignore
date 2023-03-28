@@ -38,3 +38,5 @@ secrets/
 # JetBrains Fleet
 
 .fleet/
+
+gradle.properties
