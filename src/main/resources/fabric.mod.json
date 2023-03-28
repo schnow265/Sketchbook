@@ -13,7 +13,7 @@
     "sources": "https://github.com/TamSchnow265/sketchbook"
   },
 
-  "license": "GNU GPL",
+  "license": "MIT",
   "icon": "assets/sketchbook/icon.png",
 
   "environment": "*",
