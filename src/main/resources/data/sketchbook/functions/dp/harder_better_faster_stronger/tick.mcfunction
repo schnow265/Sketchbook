@@ -1,2 +1,0 @@
-execute as @a[tag=nbs_HarderBett] run scoreboard players operation @s nbs_HarderBett += speed nbs_HarderBett
-execute as @a[tag=nbs_HarderBett] at @s run function sketchbook:dp/harder_better_faster_stronger/tree/0_4095

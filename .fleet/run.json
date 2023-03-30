@@ -13,7 +13,7 @@
         
     {
         "type": "gradle",
-        "name": "Publish to Maven",
+        "name": "Publish to GitHub Packages",
         "tasks": ["publish"],
     },
     {
