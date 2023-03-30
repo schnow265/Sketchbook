@@ -39,4 +39,4 @@ secrets/
 
 .fleet/
 
-gradle.properties
+*.properties
