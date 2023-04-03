@@ -9,8 +9,8 @@ import net.minecraft.util.math.Vec3d;
 
 public class PullEnchantment extends Enchantment {
 
-    public PullEnchantment(Rarity rarityIn, EnchantmentTarget targetIn, EquipmentSlot[] slots) {
-        super(rarityIn, targetIn, slots);
+    public PullEnchantment(Rarity rarityIn, EnchantmentTarget targetIn, EquipmentSlot slots) {
+        super(rarityIn, targetIn, new EquipmentSlot[]{slots});
     }
 
     @Override

@@ -17,20 +17,10 @@ public class LightningStrikerEnchantment extends Enchantment {
             ServerWorld world = (ServerWorld)user.world;
             BlockPos position = target.getBlockPos();
 
-            if(level == 1) {
+            for (int i = 0; i < level; i++) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
             }
 
-            if(level == 2) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
-            }
-            
-            if(level == 3) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
-            }
         }
 
         super.onTargetDamaged(user, target, level);
@@ -38,7 +28,7 @@ public class LightningStrikerEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 3;
+        return 10;
     }
     
     @Override
