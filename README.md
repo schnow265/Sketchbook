@@ -16,3 +16,4 @@ Downloading:
 ## Documentation
 
 [GitHub Wiki](https://github.com/schnow265/sketchbook/wiki)
+[The Other Docs (Still WIP)](https://github.com/schnow265/Sketchbook/docs/readme.md)
