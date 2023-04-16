@@ -7,10 +7,10 @@
     "item.sketchbook.ruby_katana": "Ruby Katana",
     "item.sketchbook.choppy": "Choppy",
     
-    "itemGroup.sketchbook.items": "Items",
-    "itemGroup.sketchbook.combat": "The White Smith",
-    "itemGroup.sketchbook.utility": "SnowTech Industries - Utilities",
-    
+    "itemgroup.skbitems": "Items",
+    "itemgroup.skcombat": "The White Smith",
+    "itemgroup.sutils": "SnowTech Industries - Utilities",
+
     "enchantment.sketchbook.pistoning": "Piston",
     "enchantment.sketchbook.boom": "BOOOM",
     "enchantment.sketchbook.lightning_striker": "Thunder",

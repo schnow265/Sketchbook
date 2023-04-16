@@ -3,10 +3,10 @@ package net.schnow265.sketchbook.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
-import net.minecraft.util.registry.*;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 import net.schnow265.sketchbook.drawbook;
@@ -15,24 +15,49 @@ import net.schnow265.sketchbook.item.custom.TreeChopper;
 
 public class ModItems {
     //Items
-    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings().group(ModItemGroup.SKBITEMS)));
+    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
 
     //Weapons
-    public static final Item A_KNUCKLES = registerItem("amethyst_knuckles", new SwordItem(ToolMaterials.DIAMOND, 2, 5, new FabricItemSettings().group(ModItemGroup.SKCOMABT)));
-    public static final Item N_HAMMER = registerItem("netherite_hammer", new SwordItem(ToolMaterials.NETHERITE, 10, 15f, new FabricItemSettings().group(ModItemGroup.SKCOMABT)));
-    public static final Item RUBY_KATANA = registerItem("ruby_katana", new SwordItem(ToolMaterials.GOLD, (int) 1.5, 5f, new FabricItemSettings().group(ModItemGroup.SKCOMABT)));
+    public static final Item A_KNUCKLES = registerItem("amethyst_knuckles", new SwordItem(ToolMaterials.DIAMOND, 2, 5, new FabricItemSettings()));
+    public static final Item N_HAMMER = registerItem("netherite_hammer", new SwordItem(ToolMaterials.NETHERITE, 10, 15f, new FabricItemSettings()));
+    public static final Item RUBY_KATANA = registerItem("ruby_katana", new SwordItem(ToolMaterials.GOLD, (int) 1.5, 5f, new FabricItemSettings()));
     
     //Axes
-    public static final Item COPPER_C_AXE = registerItem("copper_c_axe", new ModAxeItem(ToolMaterials.IRON, 3, 1f, new FabricItemSettings().group(ModItemGroup.SKCOMABT)));
-    public static final Item TCHOPPING = registerItem("choppy", new TreeChopper(ToolMaterials.NETHERITE, 0, 1f, new FabricItemSettings().group(ModItemGroup.SUTILS)));
+    public static final Item COPPER_C_AXE = registerItem("copper_c_axe", new ModAxeItem(ToolMaterials.IRON, 3, 1f, new FabricItemSettings()));
+    public static final Item CHOPPY = registerItem("choppy", new TreeChopper(ToolMaterials.NETHERITE, 0, 1f, new FabricItemSettings()));
 
+    // Into the Inventory
 
-    //Registering
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(drawbook.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, new Identifier(drawbook.MOD_ID, name), item);
+    }
+    public static void addItemsToItemGroup() {
+        addToItemGroup(ItemGroups.TOOLS, CHOPPY);
+        addToItemGroup(ModItemGroup.SUTILS, CHOPPY);
+
+        addToItemGroup(ModItemGroup.SKBITEMS, RUBY);
+        addToItemGroup(ItemGroups.INGREDIENTS, RUBY);
+
+        addToItemGroup(ModItemGroup.SKCOMABT, A_KNUCKLES);
+        addToItemGroup(ItemGroups.COMBAT, A_KNUCKLES);
+
+        addToItemGroup(ItemGroups.COMBAT, N_HAMMER);
+        addToItemGroup(ModItemGroup.SKCOMABT, N_HAMMER);
+
+        addToItemGroup(ItemGroups.COMBAT, RUBY_KATANA);
+        addToItemGroup(ModItemGroup.SKCOMABT, RUBY_KATANA);
+
+        addToItemGroup(ItemGroups.COMBAT, COPPER_C_AXE);
+        addToItemGroup(ModItemGroup.SKCOMABT, COPPER_C_AXE);
+
     }
 
+    //Registering
+    private static void addToItemGroup(ItemGroup group, Item item) {
+        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+    }
     public static void registerModItems() {
         drawbook.LOGGER.info("Registering Items for " + drawbook.MOD_ID);
+        addItemsToItemGroup();
     }
 }

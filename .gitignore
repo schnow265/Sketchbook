@@ -40,3 +40,4 @@ secrets/
 .fleet/
 
 *.properties
+/.obsidian/
