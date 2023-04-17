@@ -8,9 +8,10 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.item.ShovelItem;
 
 import net.schnow265.sketchbook.drawbook;
-import net.schnow265.sketchbook.item.custom.ModAxeItem;
+import net.schnow265.sketchbook.item.custom.frameworks.ModAxeItem;
 import net.schnow265.sketchbook.item.custom.TreeChopper;
 
 public class ModItems {
@@ -25,12 +26,12 @@ public class ModItems {
     //Axes
     public static final Item COPPER_C_AXE = registerItem("copper_c_axe", new ModAxeItem(ToolMaterials.IRON, 3, 1f, new FabricItemSettings()));
     public static final Item CHOPPY = registerItem("choppy", new TreeChopper(ToolMaterials.NETHERITE, 0, 1f, new FabricItemSettings()));
-
-    // Into the Inventory
+    public static final Item IA_SHOVEL = registerItem("ia_shovel", new ShovelItem(ToolMaterials.IRON, 0, (int) 1.15f, new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(drawbook.MOD_ID, name), item);
     }
+    // Into the Inventory
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.TOOLS, CHOPPY);
         addToItemGroup(ModItemGroup.SUTILS, CHOPPY);
@@ -50,6 +51,8 @@ public class ModItems {
         addToItemGroup(ItemGroups.COMBAT, COPPER_C_AXE);
         addToItemGroup(ModItemGroup.SKCOMABT, COPPER_C_AXE);
 
+        addToItemGroup(ModItemGroup.SFUN, IA_SHOVEL);
+        addToItemGroup(ItemGroups.TOOLS, IA_SHOVEL);
     }
 
     //Registering

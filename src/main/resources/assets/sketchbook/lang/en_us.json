@@ -6,10 +6,12 @@
     "item.sketchbook.copper_c_axe": "Curved Copper Axe",
     "item.sketchbook.ruby_katana": "Ruby Katana",
     "item.sketchbook.choppy": "Choppy",
+    "item.sketchbook.ia_shovel": "Inaccurate Shovel",
     
     "itemgroup.skbitems": "Items",
     "itemgroup.skcombat": "The White Smith",
     "itemgroup.sutils": "SnowTech Industries - Utilities",
+    "itemgroup.sfun": "The Fun stuff",
 
     "enchantment.sketchbook.pistoning": "Piston",
     "enchantment.sketchbook.boom": "BOOOM",

@@ -1,4 +1,4 @@
-package net.schnow265.sketchbook.item.custom;
+package net.schnow265.sketchbook.item.custom.frameworks;
 
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ToolMaterial;

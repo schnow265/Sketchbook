@@ -7,7 +7,7 @@ plugins {
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
-release_base_name = project.release_base_name
+archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
@@ -70,33 +70,13 @@ jar {
 // configure the maven publication
 publishing {
 	publications {
-		// This will only be enabled on Dev
-		Snapshots(MavenPublication) {
-			artifactId snapshot_base_name
-			version = mod_version
+		maven(MavenPublication) {
 			groupId = maven_group
-			from components.java
-			ext.repo = 'snapshots'
-		}
-
-		// This will only be enabled on release
-		Release(MavenPublication) {
 			artifactId = release_base_name
 			version = mod_version
-			groupId = maven_group
 			from components.java
-			ext.repo = 'release'
-		}
-
-		pkshop(MavenPublication) {
-			artifactId = release_base_name
-			version = mod_version
-			groupId = maven_group
-			from components.java
-			ext.repo = 'packageshop'
 		}
 	}
-
 	repositories {
 		maven {
 			name "release"
@@ -115,21 +95,8 @@ publishing {
 			}
 		}
 		maven {
-			name "packageshop"
-			url "https://maven.pkg.github.com/schnow265/schnow265"
-			credentials {
-				username = spaceUsername
-				password = spacePassword
-			}
-		}
-	}
-
-	afterEvaluate {
-		tasks.withType(PublishToMavenRepository) { task ->
-			if (task.publication.hasProperty('repo') && task.publication.repo != task.repository.name) {
-				task.enabled = false
-				task.group = null
-			}
+			name "lbs" // local Builds are saved in Folder ./mavenbuilds
+			url "$buildDir/mavenbuilds"
 		}
 	}
 }
@@ -148,52 +115,16 @@ modrinth {
 	}
 }
 
-task ReleasePublication {
+
+task Publicate {
 	group 'Mod Publication'
-	description "Publishes Mod to GitHub"
+	description "Publishes Mod to GitHub and Modrinth"
 
-	ReleasePublication.dependsOn publishAllPublicationsToReleaseRepository
-
+	Publicate.dependsOn publish
+	println("Published to Maven Repository")
+	Publicate.dependsOn modrinth
+	println("Published to Modrinth")
 	doLast {
-		println 'Mods Published! Get ready to Download! Please run the modrinth Task!'
-	}
-}
-
-task SnapshotPublication {
-	group 'Mod Publication'
-	description 'Publish to Snapshot Repo'
-
-	SnapshotPublication.dependsOn publishAllPublicationsToSnapshotsRepository
-
-	doLast {
-		println('Published to snapshot maven')
-	}
-}
-
-task PKShopPublication {
-	group 'Mod Publication'
-	description 'Publish to the schnow265/schnow265 repo'
-
-	PKShopPublication.dependsOn publishAllPublicationsToPackageshopRepository
-
-	doLast {
-		println('Published to Personal Repo')
-	}
-}
-
-task PackageShop {
-	group 'Mod Publication'
-	description 'Deploying like a hotfix to all repos'
-
-	doFirst {
-		println('Initializing PackageShop')
-	}
-
-	PackageShop.dependsOn SnapshotPublication
-	PackageShop.dependsOn ReleasePublication
-	PackageShop.dependsOn PKShopPublication
-
-	doLast {
-		println('Packages are now Online!')
+		println 'Mods Published! Get ready to Download!'
 	}
 }
