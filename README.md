@@ -19,4 +19,4 @@ Downloading:
 * [The Other Docs (Still WIP)](https://github.com/schnow265/Sketchbook/docs/readme.md)
 
 ## The Licence
-Oh yeah... _my Licence_. It´s based on the __MIT Licence__, but with a few more safeguards in place.
+Oh yeah... _my Licence_. It´s based on the __MIT Licence__, but with a few more safeguards against reposting in place.
