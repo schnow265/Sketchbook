@@ -102,24 +102,24 @@ publishing {
 			name "release"
 			url "https://maven.pkg.github.com/schnow265/sketchbook"
 			credentials {
-				username = spaceUsername
-				password = spacePassword
+				username = githubUsername
+				password = ghtoken
 			}
 		}
 		maven {
 			name "snapshots"
 			url "https://maven.pkg.github.com/schnow265/sketchbook"
 			credentials {
-				username = spaceUsername
-				password = spacePassword
+				username = githubUsername
+				password = ghtoken
 			}
 		}
 		maven {
 			name "packageshop"
 			url "https://maven.pkg.github.com/schnow265/schnow265"
 			credentials {
-				username = spaceUsername
-				password = spacePassword
+				username = githubUsername
+				password = ghtoken
 			}
 		}
 	}
@@ -170,20 +170,9 @@ task SnapshotPublication {
 	}
 }
 
-task PKShopPublication {
-	group 'Mod Publication'
-	description 'Publish to the schnow265/schnow265 repo'
-
-	PKShopPublication.dependsOn publishAllPublicationsToPackageshopRepository
-
-	doLast {
-		println('Published to Personal Repo')
-	}
-}
-
 task PackageShop {
 	group 'Mod Publication'
-	description 'Deploying like a hotfix to all repos'
+	description 'Deploying something like a hotfix to all repos'
 
 	doFirst {
 		println('Initializing PackageShop')
@@ -191,7 +180,6 @@ task PackageShop {
 
 	PackageShop.dependsOn SnapshotPublication
 	PackageShop.dependsOn ReleasePublication
-	PackageShop.dependsOn PKShopPublication
 
 	doLast {
 		println('Packages are now Online!')

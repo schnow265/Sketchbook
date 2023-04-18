@@ -20,12 +20,9 @@ public class drawbook implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Opening Sketchbook...");
-
 		
 		ModItems.registerModItems();
 		enchanter.registerEchanter();
-
-
 
 		LOGGER.info("Blueprints loaded!");
 	}
