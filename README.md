@@ -1,7 +1,7 @@
 # Sketchbook
 
 ## Getting Started
-Check out the Discussion right... [here](https://github.com/schnow265/Sketchbook/discussions/categories/announcements)
+Check out the Discussion right... [here](https://github.com/schnow265/Sketchbook/discussions/2))
 
 
 ## Documentation
