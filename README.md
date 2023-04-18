@@ -3,10 +3,6 @@
 ## Getting Started
 
 Downloading:
-* [GitHub Release Packages  (Newest Versions, unstable)](https://github.com/schnow265/Sketchbook/packages/1838831)
-* [GitHub Snapshot Packages](https://github.com/schnow265/packages/1839523)
-* [Releases  (not the newest stuff, guarantee of supported Version)](https://github.com/schnow265/Sketchbook/releases)
-* [Modrinth](https://modrinth.com/mod/sketchbook)
 
 
 ## Prerequisites
