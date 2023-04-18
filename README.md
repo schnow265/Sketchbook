@@ -1,15 +1,8 @@
 # Sketchbook
 
 ## Getting Started
+Check out the Discussion right... [here](https://github.com/schnow265/Sketchbook/discussions/categories/announcements)
 
-Downloading:
-
-
-## Prerequisites
-### Clients
-
-* [Fabric 1.19.2](https://fabricmc.net/use/installer/)
-* [REI](https://modrinth.com/mod/rei) (Optional)
 
 ## Documentation
 
