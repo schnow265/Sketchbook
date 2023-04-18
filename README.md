@@ -5,6 +5,7 @@
 Downloading:
 * [GitHub Packages  (Newest Versions, unstable)](https://github.com/schnow265/Sketchbook/packages/)
 * [Releases  (not the newest stuff, guarantee of supported Version)](https://github.com/schnow265/Sketchbook/releases)
+* [Modrinth](https://modrinth.com/mod/sketchbook)
 
 
 ## Prerequisites
