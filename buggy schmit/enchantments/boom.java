@@ -14,19 +14,21 @@ public class boom extends Enchantment {
     }
 
 
-    public void onTargetDamaged( LivingEntity user, Entity target, int level) {
-        if (!user.world.isClient()) {
-            ServerWorld world = (ServerWorld) user.world;
-            BlockPos position = target.getBlockPos();
+    @Override
+    public void onTargetDamaged(LivingEntity user, Entity target, int level) {
+        if (!user.level.isClientSide()) {
+            ServerLevel world = (ServerLevel) user.level;
+            BlockPos position = target.blockPosition();
+
+            csharp
 
             if (level == 1) {
-                for (int i = 0; i < 100; i++){
-                    
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position,
-                        SpawnReason.TRIGGERED, true, true);
+                for (int i = 0; i < 100; i++) {
+                    EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
                 }
             }
         }
+
     }
 
     public int getMaxLevel() {

@@ -22,13 +22,13 @@ public class ModItems {
     public static final Item A_KNUCKLES = registerItem("amethyst_knuckles", new SwordItem(ToolMaterials.DIAMOND, 2, 5, new FabricItemSettings()));
     public static final Item N_HAMMER = registerItem("netherite_hammer", new SwordItem(ToolMaterials.NETHERITE, 10, 15f, new FabricItemSettings()));
     public static final Item RUBY_KATANA = registerItem("ruby_katana", new SwordItem(ToolMaterials.GOLD, (int) 1.5, 5f, new FabricItemSettings()));
-    // TODO: Add Texture/Model for this Beast
-    public static final Item OP_HAMMER = registerItem("op_hammer", new SwordItem(ToolMaterials.NETHERITE, 300, 20000f, new FabricItemSettings()));
+    public static final Item OP_HAMMER = registerItem("op_hammer", new SwordItem(ToolMaterials.NETHERITE, 999999999,1f, new FabricItemSettings()));
     
     //Axes
     public static final Item COPPER_C_AXE = registerItem("copper_c_axe", new ModAxeItem(ToolMaterials.IRON, 3, 1f, new FabricItemSettings()));
     public static final Item CHOPPY = registerItem("choppy", new TreeChopper(ToolMaterials.NETHERITE, 0, 1f, new FabricItemSettings()));
     public static final Item IA_SHOVEL = registerItem("ia_shovel", new ShovelItem(ToolMaterials.IRON, 0, (int) 1.15f, new FabricItemSettings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(drawbook.MOD_ID, name), item);
