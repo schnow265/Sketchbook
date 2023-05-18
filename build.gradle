@@ -153,9 +153,10 @@ task ReleasePublication {
 	description "Publishes Mod to GitHub"
 
 	ReleasePublication.dependsOn publishAllPublicationsToReleaseRepository
+	ReleasePublication.dependsOn modrinth
 
 	doLast {
-		println 'Mods Published! Get ready to Download! Please run the modrinth Task!'
+		println 'Mods Published! Get ready to Download!'
 	}
 }
 
@@ -167,21 +168,5 @@ task SnapshotPublication {
 
 	doLast {
 		println('Published to snapshot maven')
-	}
-}
-
-task PackageShop {
-	group 'Mod Publication'
-	description 'Deploying something like a hotfix to all repos'
-
-	doFirst {
-		println('Initializing PackageShop')
-	}
-
-	PackageShop.dependsOn SnapshotPublication
-	PackageShop.dependsOn ReleasePublication
-
-	doLast {
-		println('Packages are now Online!')
 	}
 }
