@@ -12,9 +12,11 @@ public class enchanter {
 	/**
 	The enchanter class is responsible for registering custom enchantments in the mod.
 	It provides methods for registering enchantments and contains a list of custom enchantments.
-	@author schnow265
-	@version 1.0
-	@since 2023-05-27
+        @author schnow265
+	    @version 1.0
+	    @since 2023-05-27
+        @see pistoning
+        @see PullEnchantment
 	*/
 	
     // Beginn of custom Enchants Section
