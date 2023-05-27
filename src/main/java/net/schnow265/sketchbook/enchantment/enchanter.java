@@ -1,5 +1,4 @@
 package net.schnow265.sketchbook.enchantment;
-
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
@@ -10,6 +9,14 @@ import net.schnow265.sketchbook.drawbook;
 
 public class enchanter {
 
+	/**
+	The enchanter class is responsible for registering custom enchantments in the mod.
+	It provides methods for registering enchantments and contains a list of custom enchantments.
+	@author schnow265
+	@version 1.0
+	@since 2023-05-27
+	*/
+	
     // Beginn of custom Enchants Section
     // All commented out lines are "incompatible"
 
