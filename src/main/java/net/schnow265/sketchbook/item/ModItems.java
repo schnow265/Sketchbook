@@ -15,6 +15,15 @@ import net.schnow265.sketchbook.item.custom.frameworks.ModAxeItem;
 import net.schnow265.sketchbook.item.custom.TreeChopper;
 
 public class ModItems {
+    /**
+        Here you can find Items added by the mod.
+        Items are added using this scheme: {@code public static final Item [ItemName] = registerItem("[itemname]", new Item(new FabricItemSettings()));}
+        They are added to the Inventory using the {@code addToItemGroup()} Function.
+
+        @author schnow265
+        @since 2023-05-28
+        @see ModItemGroup
+    */
     //Items
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
 
@@ -35,6 +44,7 @@ public class ModItems {
     }
     // Into the Inventory
     public static void addItemsToItemGroup() {
+
         addToItemGroup(ItemGroups.TOOLS, CHOPPY);
         addToItemGroup(ModItemGroup.SUTILS, CHOPPY);
 
