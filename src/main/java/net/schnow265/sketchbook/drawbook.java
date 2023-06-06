@@ -3,27 +3,31 @@ package net.schnow265.sketchbook;
 import net.fabricmc.api.ModInitializer;
 import net.schnow265.sketchbook.enchantment.enchanter;
 import net.schnow265.sketchbook.item.ModItems;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class drawbook implements ModInitializer {
+
+	/**
+	 * This code is responsible for activating the mod and adding Items and enchants.
+	 *
+	 * @author schnow265
+	 */
+
+
 	public static final String MOD_ID ="sketchbook";
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
 
-		LOGGER.info("Opening Sketchbook...");
+		LOGGER.info("Opening Sketchbook..."); // Starting the loading of my mod.
 		
 		ModItems.registerModItems();
 		enchanter.registerEchanter();
+		magicLoader.registerMagic();
 
-		LOGGER.info("Blueprints loaded!");
+		LOGGER.info("Blueprints loaded!"); // If this message appears in your Logs, my mod is not the crash cause.
 	}
 }
