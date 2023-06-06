@@ -137,7 +137,7 @@ publishing {
 // Modrinth Publishing
 modrinth {
 	token = modrinthtoken
-	projectId = mid
+	projectId = release_base_name
 	versionNumber = mod_version
 	versionType = "release" // This is the default -- can also be `beta` or `alpha`
 	uploadFile = jar // With Loom, this MUST be set to `remapJar` instead of `jar`!
