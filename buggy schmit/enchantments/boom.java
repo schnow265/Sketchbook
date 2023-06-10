@@ -20,8 +20,6 @@ public class boom extends Enchantment {
             ServerLevel world = (ServerLevel) user.level;
             BlockPos position = target.blockPosition();
 
-            csharp
-
             if (level == 1) {
                 for (int i = 0; i < 100; i++) {
                     EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
