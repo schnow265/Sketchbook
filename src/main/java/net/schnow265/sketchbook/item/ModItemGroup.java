@@ -12,4 +12,5 @@ public class ModItemGroup {
     public static final ItemGroup SKCOMABT = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "combat")).displayName(Text.translatable("itemgroup.skcombat")).icon(() -> new ItemStack(ModItems.N_HAMMER)).build();
     public static final ItemGroup SUTILS = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "utility")).displayName(Text.translatable("itemgroup.sutils")).icon(() -> new ItemStack(ModItems.CHOPPY)).build();
     public static final ItemGroup SFUN = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "sfun")).displayName(Text.translatable("itemgroup.sfun")).icon(() -> new ItemStack(ModItems.IA_SHOVEL)).build();
+    public static final ItemGroup MAGIC = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "magical")).displayName(Text.translatable("itemgroup.magical")).icon(() -> new ItemStack(ModItems.IA_SHOVEL)).build();
 }
