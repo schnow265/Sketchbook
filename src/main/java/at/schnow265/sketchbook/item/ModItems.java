@@ -1,17 +1,15 @@
-package net.schnow265.sketchbook.item;
+package at.schnow265.sketchbook.item;
 
 
+import at.schnow265.sketchbook.drawbook;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
-import net.schnow265.sketchbook.drawbook;
-import net.schnow265.sketchbook.item.custom.TreeChopper;
+import at.schnow265.sketchbook.item.custom.TreeChopper;
 
 public class ModItems {
     /**

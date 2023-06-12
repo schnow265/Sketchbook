@@ -1,9 +1,9 @@
-package net.schnow265.sketchbook;
+package at.schnow265.sketchbook;
 
 import net.fabricmc.api.ModInitializer;
-import net.schnow265.sketchbook.enchantment.enchanter;
-import net.schnow265.sketchbook.item.ModItems;
-import net.schnow265.sketchbook.magic.magicLoader;
+import at.schnow265.sketchbook.enchantment.enchanter;
+import at.schnow265.sketchbook.item.ModItems;
+import at.schnow265.sketchbook.magic.magicLoader;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,6 @@
-package net.schnow265.sketchbook.magic;
+package at.schnow265.sketchbook.magic;
 
-import net.schnow265.sketchbook.drawbook;
-import static net.schnow265.sketchbook.magic.MagicItems.registerMagicItemsToMod;
+import at.schnow265.sketchbook.drawbook;
 
 
 public class magicLoader {
@@ -10,7 +9,7 @@ public class magicLoader {
 
     public static void registerMagic() {
         drawbook.LOGGER.info("Registering Magic for " + drawbook.MOD_ID);
-        registerMagicItemsToMod();
+        MagicItems.registerMagicItemsToMod();
 
         drawbook.LOGGER.info("Done Registering Magic for " + drawbook.MOD_ID);
     }

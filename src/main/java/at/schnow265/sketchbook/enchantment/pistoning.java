@@ -1,4 +1,4 @@
-package net.schnow265.sketchbook.enchantment;
+package at.schnow265.sketchbook.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;

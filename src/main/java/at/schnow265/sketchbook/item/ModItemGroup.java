@@ -1,5 +1,6 @@
-package net.schnow265.sketchbook.item;
+package at.schnow265.sketchbook.item;
 
+import at.schnow265.sketchbook.drawbook;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -7,7 +8,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.schnow265.sketchbook.drawbook;
 
 public class ModItemGroup {
     public static ItemGroup SKBITEMS = Registry.register(Registries.ITEM_GROUP, new Identifier(drawbook.MOD_ID, "skbitems"),
