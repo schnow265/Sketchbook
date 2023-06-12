@@ -2,15 +2,13 @@ package net.schnow265.sketchbook.item;
 
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+
 import net.minecraft.item.*;
-import net.minecraft.item.AxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.item.ShovelItem;
 
 import net.schnow265.sketchbook.drawbook;
 import net.schnow265.sketchbook.item.custom.TreeChopper;
@@ -37,6 +35,7 @@ public class ModItems {
     public static final Item COPPER_C_AXE = registerItem("copper_c_axe", new AxeItem(ToolMaterials.IRON, 3, 1f, new FabricItemSettings()));
     public static final Item CHOPPY = registerItem("choppy", new TreeChopper(ToolMaterials.NETHERITE, 0, 1f, new FabricItemSettings()));
     public static final Item IA_SHOVEL = registerItem("ia_shovel", new ShovelItem(ToolMaterials.IRON, 0, (int) 1.15f, new FabricItemSettings()));
+
 
 
     private static Item registerItem(String name, Item item) {
