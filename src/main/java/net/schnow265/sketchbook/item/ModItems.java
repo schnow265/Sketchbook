@@ -8,6 +8,7 @@ import net.minecraft.item.*;
 import net.minecraft.item.AxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.item.ShovelItem;
 
@@ -22,7 +23,6 @@ public class ModItems {
 
         @author schnow265
         @since 2023-05-28
-        @see ModItemGroup
     */
     //Items
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
@@ -43,39 +43,8 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(drawbook.MOD_ID, name), item);
     }
 
-    // Into the Inventory
-    public static void addItemsToItemGroup() {
-
-        addToItemGroup(ItemGroups.TOOLS, CHOPPY);
-        addToItemGroup(ModItemGroup.SUTILS, CHOPPY);
-
-        addToItemGroup(ModItemGroup.SKBITEMS, RUBY);
-        addToItemGroup(ItemGroups.INGREDIENTS, RUBY);
-
-        addToItemGroup(ModItemGroup.SKCOMABT, A_KNUCKLES);
-        addToItemGroup(ItemGroups.COMBAT, A_KNUCKLES);
-
-        addToItemGroup(ItemGroups.COMBAT, N_HAMMER);
-        addToItemGroup(ModItemGroup.SKCOMABT, N_HAMMER);
-
-        addToItemGroup(ItemGroups.COMBAT, RUBY_KATANA);
-        addToItemGroup(ModItemGroup.SKCOMABT, RUBY_KATANA);
-
-        addToItemGroup(ItemGroups.COMBAT, COPPER_C_AXE);
-        addToItemGroup(ModItemGroup.SKCOMABT, COPPER_C_AXE);
-
-        addToItemGroup(ModItemGroup.SFUN, IA_SHOVEL);
-        addToItemGroup(ItemGroups.TOOLS, IA_SHOVEL);
-        
-        addToItemGroup(ItemGroups.OPERATOR, OP_HAMMER);
-    }
-
     //Registering
-    private static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
     public static void registerModItems() {
         drawbook.LOGGER.info("Registering Items for " + drawbook.MOD_ID);
-        addItemsToItemGroup();
     }
 }

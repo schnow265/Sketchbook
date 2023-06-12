@@ -32,12 +32,7 @@ bin/
 
 run/
 
-# snow-inc
-secrets/
-
-# JetBrains Fleet
-
-.fleet/
+# other crap you wouldn´t like
 
 *.properties
 .obsidian/

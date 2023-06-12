@@ -3,13 +3,40 @@ package net.schnow265.sketchbook.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.schnow265.sketchbook.drawbook;
 
 public class ModItemGroup {
-    public static final ItemGroup SKBITEMS = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "items")).displayName(Text.translatable("itemgroup.skbitems")).icon(() -> new ItemStack(ModItems.RUBY)).build();
-    public static final ItemGroup SKCOMABT = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "combat")).displayName(Text.translatable("itemgroup.skcombat")).icon(() -> new ItemStack(ModItems.N_HAMMER)).build();
-    public static final ItemGroup SUTILS = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "utility")).displayName(Text.translatable("itemgroup.sutils")).icon(() -> new ItemStack(ModItems.CHOPPY)).build();
-    public static final ItemGroup SFUN = FabricItemGroup.builder(new Identifier(drawbook.MOD_ID, "sfun")).displayName(Text.translatable("itemgroup.sfun")).icon(() -> new ItemStack(ModItems.IA_SHOVEL)).build();
+    public static ItemGroup SKBITEMS = Registry.register(Registries.ITEM_GROUP, new Identifier(drawbook.MOD_ID, "skbitems"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.skbitems"))
+                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+                        //entries.add(ModItems.);
+                        entries.add(ModItems.RUBY);
+                    }).build());
+    public static ItemGroup SKCOMABT = Registry.register(Registries.ITEM_GROUP, new Identifier(drawbook.MOD_ID, "skcombat"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.skcombat"))
+                    .icon(() -> new ItemStack(ModItems.N_HAMMER)).entries((displayContext, entries) -> {
+                        //entries.add(ModItems.);
+                        entries.add(ModItems.N_HAMMER);
+                        entries.add(ModItems.A_KNUCKLES);
+                        entries.add(ModItems.A_KNUCKLES);
+                        entries.add(ModItems.COPPER_C_AXE);
+                        entries.add(ModItems.RUBY_KATANA);
+                    }).build());
+    public static ItemGroup SFUN = Registry.register(Registries.ITEM_GROUP, new Identifier(drawbook.MOD_ID, "sfun"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sfun"))
+                    .icon(() -> new ItemStack(ModItems.OP_HAMMER)).entries((displayContext, entries) -> {
+                        //entries.add(ModItems.);
+                        entries.add(ModItems.OP_HAMMER);
+                        entries.add(ModItems.IA_SHOVEL);
+                    }).build());
+    public static ItemGroup SUTILS = Registry.register(Registries.ITEM_GROUP, new Identifier(drawbook.MOD_ID, "sutils"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sutils"))
+                    .icon(() -> new ItemStack(ModItems.CHOPPY)).entries((displayContext, entries) -> {
+                        //entries.add(ModItems.);
+                        entries.add(ModItems.CHOPPY);
+                    }).build());
 }

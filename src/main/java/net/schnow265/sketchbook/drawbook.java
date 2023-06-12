@@ -24,6 +24,7 @@ public class drawbook implements ModInitializer {
 		ModItems.registerModItems();
 		enchanter.registerEchanter();
 
+
 		LOGGER.info("Blueprints loaded!");
 	}
 }
