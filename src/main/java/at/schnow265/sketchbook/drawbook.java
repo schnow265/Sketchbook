@@ -1,5 +1,6 @@
 package at.schnow265.sketchbook;
 
+import at.schnow265.sketchbook.item.ModItemGroup;
 import net.fabricmc.api.ModInitializer;
 import at.schnow265.sketchbook.enchantment.enchanter;
 import at.schnow265.sketchbook.item.ModItems;
@@ -10,12 +11,6 @@ import org.slf4j.LoggerFactory;
 
 public class drawbook implements ModInitializer {
 
-	/**
-	 * This code is responsible for activating the mod and adding Items and enchants.
-	 *
-	 * @author schnow265
-	 */
-
 
 	public static final String MOD_ID ="sketchbook";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -24,7 +19,7 @@ public class drawbook implements ModInitializer {
 	public void onInitialize() {
 
 		LOGGER.info("Opening Sketchbook..."); // Starting the loading of my mod.
-		
+
 		ModItems.registerModItems();
 		enchanter.registerEchanter();
 		magicLoader.registerMagic();

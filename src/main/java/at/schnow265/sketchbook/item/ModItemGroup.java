@@ -32,6 +32,7 @@ public class ModItemGroup {
                         //entries.add(ModItems.);
                         entries.add(ModItems.OP_HAMMER);
                         entries.add(ModItems.IA_SHOVEL);
+                        entries.add(ModItems.NULLGUN);
                     }).build());
     public static ItemGroup SUTILS = Registry.register(Registries.ITEM_GROUP, new Identifier(drawbook.MOD_ID, "sutils"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.sutils"))
