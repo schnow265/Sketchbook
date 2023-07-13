@@ -1,4 +1,4 @@
-package net.schnow265.sketchbook.enchantment;
+package at.schnow265.sketchbook.enchantment.enchants;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -9,13 +9,6 @@ import net.minecraft.util.math.Vec3d;
 
 public class PullEnchantment extends Enchantment {
 
-    /**
-     This Class provides the Enchantment "Pull", which pulls the Target back to you.
-
-     @author schnow265
-     @version 1.0
-     @since 2023-05-27
-     */
     public PullEnchantment(Rarity rarityIn, EnchantmentTarget targetIn, EquipmentSlot slots) {
         super(rarityIn, targetIn, new EquipmentSlot[]{slots});
     }
@@ -31,7 +24,7 @@ public class PullEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, net.minecraft.entity.Entity target, int level) {
-        if (user.world.isClient) {
+        if (user.getWorld().isClient) {
             return;
         }
 

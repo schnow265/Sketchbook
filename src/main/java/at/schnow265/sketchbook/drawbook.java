@@ -1,10 +1,10 @@
 package at.schnow265.sketchbook;
 
-import at.schnow265.sketchbook.item.ModItemGroup;
 import net.fabricmc.api.ModInitializer;
 import at.schnow265.sketchbook.enchantment.enchanter;
 import at.schnow265.sketchbook.item.ModItems;
 import at.schnow265.sketchbook.magic.magicLoader;
+import at.schnow265.sketchbook.check.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +17,11 @@ public class drawbook implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("Searching for invalid mods...");
+
+		checkloader.checkcrash(); // check for presence of shitpeaces.
+
+		LOGGER.info("No invalid mods found. Good for you! :D");
 
 		LOGGER.info("Opening Sketchbook..."); // Starting the loading of my mod.
 

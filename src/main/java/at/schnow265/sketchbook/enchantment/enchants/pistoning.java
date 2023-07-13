@@ -1,4 +1,4 @@
-package at.schnow265.sketchbook.enchantment;
+package at.schnow265.sketchbook.enchantment.enchants;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -6,13 +6,6 @@ import net.minecraft.entity.EquipmentSlot;
 
 public class pistoning extends Enchantment {
 
-    /**
-        This Class provides the Enchantment "Pistoning", which adds more knockback.
-
-        @author schnow265
-        @version 1.0
-        @since 2023-05-27
-     */
 
     public pistoning(Rarity weight, EnchantmentTarget weapon, EquipmentSlot... slot) {
         super(weight, EnchantmentTarget.WEAPON, slot);

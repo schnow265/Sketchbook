@@ -1,5 +1,7 @@
 package at.schnow265.sketchbook.enchantment;
 import at.schnow265.sketchbook.drawbook;
+import at.schnow265.sketchbook.enchantment.enchants.PullEnchantment;
+import at.schnow265.sketchbook.enchantment.enchants.pistoning;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
@@ -9,22 +11,14 @@ import net.minecraft.util.Identifier;
 
 public class enchanter {
 
-	/**
-	The enchanter class is responsible for registering custom enchantments in the mod.
-	It provides methods for registering enchantments and contains a list of custom enchantments.
-        @author schnow265
-	    @version 1.0
-	    @since 2023-05-27
-        @see pistoning
-	*/
 	
     // Beginn of custom Enchants Section
     // All commented out lines are "incompatible"
 
     //public static Enchantment LIGHTNING_STRIKER = register("lightning_striker", new LightningStrikerEnchantment(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
     public static Enchantment PISTONING = register("pistoning", new pistoning(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-    //public static Enchantment BOOM = register("boom", new boom(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-    //public static Enchantment PULL = register("pull", new PullEnchantment(Enchantment.Rarity.COMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+    public static Enchantment PULL = register("pull", new PullEnchantment(Enchantment.Rarity.COMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+
 
 
     // End of custom Enchant Section
