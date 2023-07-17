@@ -18,7 +18,25 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 
-	//maven { url 'https://maven.blamejared.com' }
+	maven {
+		name = 'Banner++'
+		url 'https://server.bbkr.space/artifactory/libs-release/'
+	}
+
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+
+	maven {
+		name = "Ladysnake Libs"
+		url = 'https://maven.ladysnake.org/releases'
+	}
+
+	maven {
+		name = "Patchouli"
+		url = 'https://maven.blamejared.com'
+	}
 }
 
 dependencies {
@@ -34,6 +52,8 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+	modImplementation "dev.emi:trinkets:3.7.0"
+	modImplementation "vazkii.patchouli:Patchouli:1.20.1-81-FABRIC"
 }
 
 processResources {
@@ -134,13 +154,18 @@ modrinth {
 	token = modrinthtoken
 	projectId = release_base_name
 	versionNumber = mod_version
-	versionType = "release" // This is the default -- can also be `beta` or `alpha`
-	uploadFile = jar // With Loom, this MUST be set to `remapJar` instead of `jar`!
-	gameVersions = ["1.20"]
+	versionType = "release"
+	uploadFile = remapJar
+	gameVersions = ["1.20.1"]
 	loaders = ["fabric"]
 	dependencies {
 		required.project "fabric-api"
+		required.project "trinkets"
+
 		optional.project "rei"
+
+		incompatible.project "optifine"
+		incompatible.project "optifabric"
 	}
 }
 

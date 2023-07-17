@@ -1,6 +1,5 @@
 package at.schnow265.sketchbook.item.custom.frameworks;
 
-import at.schnow265.sketchbook.check.shenanigins.hehe;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,7 +15,6 @@ public class ChoppyFramework extends AxeItem {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        hehe.optipunish();
         PlayerEntity player = context.getPlayer();
         if (player != null && !player.isSneaking()) {
             Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sketchbook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sketchbook.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sketchbook.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sketchbook.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.schnow265.Sketchbook.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.schnow265.Sketchbook.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.schnow265.Sketchbook.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.schnow265.Sketchbook.test.iml" />
     </modules>
   </component>
 </project>

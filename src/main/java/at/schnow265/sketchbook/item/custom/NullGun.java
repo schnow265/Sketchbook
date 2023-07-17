@@ -10,6 +10,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
+//public static final Item NULLGUN = registerItem("nullgun", new NullGun(), new FabricItemSettings());
 public class NullGun extends BowItem {
     public NullGun() {
         super(new Settings().maxCount(1));

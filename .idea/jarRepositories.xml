@@ -36,5 +36,20 @@
       <option name="name" value="UserLocalRemappedMods" />
       <option name="url" value="file:/var/home/schnow265/Dokumente/Sketchbook/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="Banner++" />
+      <option name="name" value="Banner++" />
+      <option name="url" value="https://server.bbkr.space/artifactory/libs-release/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="TerraformersMC" />
+      <option name="name" value="TerraformersMC" />
+      <option name="url" value="https://maven.terraformersmc.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Ladysnake Libs" />
+      <option name="name" value="Ladysnake Libs" />
+      <option name="url" value="https://maven.ladysnake.org/releases" />
+    </remote-repository>
   </component>
 </project>
