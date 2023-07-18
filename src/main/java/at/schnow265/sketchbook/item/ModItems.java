@@ -34,7 +34,7 @@ public class ModItems {
 
     //Registering
     public static void registerModItems() {
-        //ModItemGroup.registerItemGroups();
+        ModItemGroup.ItemAdder();
         drawbook.LOGGER.info("Registering Items for " + drawbook.MOD_ID);
     }
 }
