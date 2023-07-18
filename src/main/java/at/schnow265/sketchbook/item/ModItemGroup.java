@@ -1,5 +1,6 @@
 package at.schnow265.sketchbook.item;
 
+import at.schnow265.sketchbook.block.ModBlocks;
 import at.schnow265.sketchbook.drawbook;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -10,25 +11,32 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static void ItemAdder() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
-            content.add(ModItems.A_KNUCKLES);
-            content.add(ModItems.N_HAMMER);
-            content.add(ModItems.RUBY_KATANA);
-            content.add(ModItems.COPPER_C_AXE);
-        });
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
-            content.addAfter(Items.GOLD_NUGGET ,ModItems.RUBY);
-        });
+    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(drawbook.MOD_ID, "ruby"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.kaupeneyejoe"))
+                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.RUBY);
+                        entries.add(ModItems.RAW_RUBY);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content ->{
-            content.addAfter(Items.NETHERITE_HOE, ModItems.CHOPPY);
-            content.addBefore(Items.WOODEN_SHOVEL, ModItems.IA_SHOVEL);
-        });
+                        entries.add(ModItems.METAL_DETECTOR);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register(content -> {
-            content.add(ModItems.OP_HAMMER);
-        });
+                        entries.add(Items.DIAMOND);
+
+                        entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
+
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModBlocks.NETHER_RUBY_ORE);
+                        entries.add(ModBlocks.END_STONE_RUBY_ORE);
+
+
+                    }).build());
+
+
+
+    public static void registerItemGroups() {
+        drawbook.LOGGER.info("Registering Item Groups for " + drawbook.MOD_ID);
     }
 }

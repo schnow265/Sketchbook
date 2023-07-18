@@ -8,12 +8,22 @@
     "item.sketchbook.choppy": "Choppy",
     "item.sketchbook.ia_shovel": "Inaccurate Shovel",
     "item.sketchbook.op_hammer": "The Ban Hammer",
+    "item.sketchbook.metal_detector": "Metal Detector",
+    "item.sketchbook.raw_ruby": "Raw Ruby",
+
+    "item.sketchbook.ruby_block": "Ruby Block",
+    "item.sketchbook.raw_ruby_block": "Raw Ruby Block",
+    "item.sketchbook.ruby_ore": "Ruby Ore",
+    "item.sketchbook.deepslate_ruby_ore": "Deepslate Ruby Ore",
+    "item.sketchbook.nether_ruby_ore": "Nether Ruby Ore",
+    "item.sketchbook.end_stone_ruby_ore": "End Stone Ruby Ore",
     
     "itemgroup.skbitems": "Items",
     "itemgroup.skcombat": "The White Smith",
     "itemgroup.sutils": "SnowTech Industries - Utilities",
     "itemgroup.sfun": "The Fun stuff",
     "itemgroup.magical": "Magical",
+    "itemgroup.kaupeneyejoe": "Made by Kaupen-Eye-Joe",
 
     "enchantment.sketchbook.pistoning": "Piston",
     "enchantment.sketchbook.boom": "BOOOM",
