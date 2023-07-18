@@ -28,11 +28,12 @@ bin/
 
 *.DS_Store
 
-# fabric run dirs; we upload mod dir, options and logs to GH.
+# fabric run dirs; we upload mod dir and options to GH.
 
 run/.fabric
 run/config
 run/data
+run/logs
 run/patchouli_books
 run/resourcepacks
 run/resources
