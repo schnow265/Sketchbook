@@ -73,7 +73,7 @@ java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 	// if it is present.
 	// If you remove this line, sources will not be generated.
-	withSourcesJar()
+	//withSourcesJar()
 }
 
 jar {
@@ -102,14 +102,6 @@ publishing {
 			from components.java
 			ext.repo = 'release'
 		}
-
-		pkshop(MavenPublication) {
-			artifactId = release_base_name
-			version = mod_version
-			groupId = maven_group
-			from components.java
-			ext.repo = 'packageshop'
-		}
 	}
 
 	repositories {
@@ -124,14 +116,6 @@ publishing {
 		maven {
 			name "snapshots"
 			url "https://maven.pkg.github.com/schnow265/sketchbook"
-			credentials {
-				username = githubUsername
-				password = ghtoken
-			}
-		}
-		maven {
-			name "packageshop"
-			url "https://maven.pkg.github.com/schnow265/schnow265"
 			credentials {
 				username = githubUsername
 				password = ghtoken
@@ -161,17 +145,15 @@ modrinth {
 	dependencies {
 		required.project "fabric-api"
 		required.project "trinkets"
+		required.project "patchouli"
 
 		optional.project "rei"
-
-		incompatible.project "optifine"
-		incompatible.project "optifabric"
 	}
 }
 
 task ReleasePublication {
 	group 'Mod Publication'
-	description "Publishes Mod to GitHub"
+	description "Publishes Mod to GitHub and Modrinth"
 
 	ReleasePublication.dependsOn publishAllPublicationsToReleaseRepository
 	ReleasePublication.dependsOn modrinth

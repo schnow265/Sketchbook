@@ -2,6 +2,7 @@ package at.schnow265.sketchbook.enchantment.enchants;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
@@ -23,8 +24,8 @@ public class PullEnchantment extends Enchantment {
     }
 
     @Override
-    public void onTargetDamaged(LivingEntity user, net.minecraft.entity.Entity target, int level) {
-        if (user.getWorld().isClient) {
+    public void onTargetDamaged(LivingEntity user, Entity target, int level) {
+        if (user.().isClient) {
             return;
         }
 

@@ -28,11 +28,20 @@ bin/
 
 *.DS_Store
 
-# fabric
+# fabric run dirs; we upload mod dir, options and logs to GH.
 
-run/
+run/.fabric
+run/config
+run/data
+run/patchouli_books
+run/resourcepacks
+run/resources
+run/saves
+run/patchouli_data.json
+run/usercache.json
 
 # other crap you wouldn´t like
 
 *.properties
 .obsidian/
+*.lock
