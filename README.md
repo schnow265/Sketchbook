@@ -17,4 +17,4 @@ If you have *any* Ideas:
 2. Make a new Issue on the "Feature Request"-Template
 
 ## Maven Repos
-You might notice that there are *two* packages, the only difference is the CountryCode. The most recent packages have the ID **at.schnow265**. The net.schnow265 packages are the legacy Packages.
+You might notice that there are *two* packages, the only difference is the TLD. The most recent packages have the ID **at.schnow265**. The net.schnow265 packages are the legacy Packages.
