@@ -1,5 +1,6 @@
 package at.schnow265.sketchbook.item;
 
+import at.schnow265.sketchbook.block.ModBlocks;
 import at.schnow265.sketchbook.drawbook;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

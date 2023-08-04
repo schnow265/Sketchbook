@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "sketchbook:item/ruby"
+    "layer0": "sketchbook:item/raw_ruby"
   }
 }
