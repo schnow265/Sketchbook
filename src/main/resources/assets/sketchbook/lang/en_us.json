@@ -1,6 +1,5 @@
 {
     "item.sketchbook.ruby": "Ruby",
-
     "item.sketchbook.amethyst_knuckles": "Amethyst Knuckles",
     "item.sketchbook.netherite_hammer": "Netherite Hammer",
     "item.sketchbook.copper_c_axe": "Curved Copper Axe",
@@ -28,5 +27,12 @@
     "enchantment.sketchbook.pistoning": "Piston",
     "enchantment.sketchbook.boom": "BOOOM",
     "enchantment.sketchbook.lightning_striker": "Thunder",
-    "enchantment.sketchbook.pull": "Get right back here!"
+    "enchantment.sketchbook.pull": "Get right back here!",
+
+
+    "tooltips.choppy.nshift": "Left click on a tree for some chopping!",
+    "tooltips.choppy.shift": "Shift-Click is dangerous, you know? ",
+
+    "enchantment_lore.sketchbook:pistoning.lore": "Once upon a time, a magician didn't want to get his foes (or even friends) near him. So he made this enchantment to achieve this task.",
+    "enchantment_lore.sketchbook:pistoning.description": "§nPiston §r\n\n Max Level: V \n\n Works on: Weapons."
 }

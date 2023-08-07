@@ -148,6 +148,7 @@ modrinth {
 		required.project "patchouli"
 
 		optional.project "rei"
+		optional.project "YHdR6hMt" //Adds Enchantment Lore as Optionel Target.
 	}
 }
 
