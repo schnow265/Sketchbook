@@ -1,0 +1,20 @@
+{
+  "name": "Choppy",
+  "icon": "sketchbook:choppy",
+  "category": "sketchbook:test",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "With Choppy you can easily remove many, many Trees from a Forest - and get the resources ot of it!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "sketchbook:choppy"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "How to get Choppy?",
+      "recipe": "sketchbook:choppy"
+    }
+  ]
+}

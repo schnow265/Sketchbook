@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "tutorialmod:block/ruby_ore"
+      "model": "sketchbook:block/ruby_ore"
     }
   }
 }

@@ -10,29 +10,22 @@
     "item.sketchbook.metal_detector": "Metal Detector",
     "item.sketchbook.raw_ruby": "Raw Ruby",
 
-    "item.sketchbook.ruby_block": "Ruby Block",
-    "item.sketchbook.raw_ruby_block": "Raw Ruby Block",
-    "item.sketchbook.ruby_ore": "Ruby Ore",
-    "item.sketchbook.deepslate_ruby_ore": "Deepslate Ruby Ore",
-    "item.sketchbook.nether_ruby_ore": "Nether Ruby Ore",
-    "item.sketchbook.end_stone_ruby_ore": "End Stone Ruby Ore",
-    
-    "itemgroup.skbitems": "Items",
-    "itemgroup.skcombat": "The White Smith",
-    "itemgroup.sutils": "SnowTech Industries - Utilities",
-    "itemgroup.sfun": "The Fun stuff",
+    "block.sketchbook.ruby_block": "Ruby Block",
+    "block.sketchbook.raw_ruby_block": "Raw Ruby Block",
+    "block.sketchbook.ruby_ore": "Ruby Ore",
+    "block.sketchbook.deepslate_ruby_ore": "Deepslate Ruby Ore",
+    "block.sketchbook.nether_ruby_ore": "Nether Ruby Ore",
+    "block.sketchbook.end_stone_ruby_ore": "End Stone Ruby Ore",
+
     "itemgroup.magical": "Magical",
-    "itemgroup.kaupeneyejoe": "Made by Kaupen-Eye-Joe",
+    "itemgroup.sketchbook.sketchys": "Sketchbook",
 
     "enchantment.sketchbook.pistoning": "Piston",
     "enchantment.sketchbook.boom": "BOOOM",
     "enchantment.sketchbook.lightning_striker": "Thunder",
     "enchantment.sketchbook.pull": "Get right back here!",
-
+    "enchantment.sketchbook.frosty": "Refigerator",
 
     "tooltips.choppy.nshift": "Left click on a tree for some chopping!",
-    "tooltips.choppy.shift": "Shift-Click is dangerous, you know? ",
-
-    "enchantment_lore.sketchbook:pistoning.lore": "Once upon a time, a magician didn't want to get his foes (or even friends) near him. So he made this enchantment to achieve this task.",
-    "enchantment_lore.sketchbook:pistoning.description": "§nPiston §r\n\n Max Level: V \n\n Works on: Weapons."
+    "tooltips.choppy.shift": "Shift-Click is dangerous, you know? "
 }

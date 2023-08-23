@@ -40,7 +40,7 @@ run/resources
 run/saves
 run/patchouli_data.json
 run/usercache.json
-run/ModTranslations
+run/crash-reports
 
 # other crap you wouldn´t like
 

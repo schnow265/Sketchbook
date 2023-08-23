@@ -34,7 +34,8 @@ public class TreeChopper extends AxeItem {
 
             Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
             if (block.equals(Blocks.OAK_LOG) || block.equals(Blocks.SPRUCE_LOG) || block.equals(Blocks.BIRCH_LOG) ||
-                    block.equals(Blocks.JUNGLE_LOG) || block.equals(Blocks.ACACIA_LOG) || block.equals(Blocks.DARK_OAK_LOG) || block.equals(Blocks.MANGROVE_LOG)) {
+                    block.equals(Blocks.JUNGLE_LOG) || block.equals(Blocks.ACACIA_LOG) || block.equals(Blocks.DARK_OAK_LOG) ||
+                    block.equals(Blocks.MANGROVE_LOG) || block.equals(Blocks.CHERRY_LOG)) {
                 // The block is a log block
                 context.getWorld().breakBlock(context.getBlockPos(), true, player);
                 int radius = isShiftHeld ? 100 : 10; // Change the radius based on whether Shift is held or not
