@@ -1,7 +1,7 @@
 {
   "name": "Test Entry",
   "icon": "minecraft:writable_book",
-  "category": "blueprints:test_category",
+  "category": "sketchbook:blueprints",
   "pages": [
     {
       "type": "patchouli:text",

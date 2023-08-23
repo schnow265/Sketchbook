@@ -20,6 +20,7 @@ public class ModItemGroup {
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.CHOPPY);
+                        entries.add(ModItems.TREESTROYER);
                         entries.add(ModItems.N_HAMMER);
                         entries.add(ModItems.RUBY_KATANA);
                         entries.add(ModBlocks.RUBY_BLOCK);

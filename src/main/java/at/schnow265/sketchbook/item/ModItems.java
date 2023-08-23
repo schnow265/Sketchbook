@@ -3,6 +3,7 @@ package at.schnow265.sketchbook.item;
 
 import at.schnow265.sketchbook.drawbook;
 import at.schnow265.sketchbook.item.custom.MetalDetectorItem;
+import at.schnow265.sketchbook.item.custom.TreeStroyer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -24,6 +25,7 @@ public class ModItems {
     //Axes
     public static final Item COPPER_C_AXE = registerItem("copper_c_axe", new AxeItem(ToolMaterials.IRON, 3, 1f, new FabricItemSettings()));
     public static final Item CHOPPY = registerItem("choppy", new TreeChopper(ToolMaterials.NETHERITE, 0, 1f, new FabricItemSettings()));
+    public static final Item TREESTROYER = registerItem("treestroyer", new TreeStroyer(ToolMaterials.NETHERITE,500,50f, new FabricItemSettings()));
     public static final Item IA_SHOVEL = registerItem("ia_shovel", new ShovelItem(ToolMaterials.IRON, 0, (int) 1.15f, new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
@@ -56,6 +58,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register(content -> {
             content.add(ModItems.OP_HAMMER);
+            content.add(ModItems.TREESTROYER);
         });
     }
 

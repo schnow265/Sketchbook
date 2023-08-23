@@ -5,6 +5,7 @@
     "item.sketchbook.copper_c_axe": "Curved Copper Axe",
     "item.sketchbook.ruby_katana": "Ruby Katana",
     "item.sketchbook.choppy": "Choppy",
+    "item.sketchbook.treestroyer": "TreeStroyer",
     "item.sketchbook.ia_shovel": "Inaccurate Shovel",
     "item.sketchbook.op_hammer": "The Ban Hammer",
     "item.sketchbook.metal_detector": "Metal Detector",
@@ -27,5 +28,6 @@
     "enchantment.sketchbook.frosty": "Refigerator",
 
     "tooltips.choppy.nshift": "Left click on a tree for some chopping!",
-    "tooltips.choppy.shift": "Shift-Click is dangerous, you know? "
+    "tooltips.choppy.shift": "Shift-Click is dangerous, you know?",
+    "tooltips.ts.warning": "CRASH WARNING!!!"
 }

@@ -1,0 +1,38 @@
+{
+  "name": "Fast Wood.",
+  "icon": "sketchbook:choppy",
+  "category": "sketchbook:blueprints",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "In this Chapter of the book, I will show you some tools to remove Trees COMPLETLY."
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://minecraft.fandom.com/wiki/Tree",
+      "text": "But how does the Target look? Click the link below!",
+      "link_text": "Target"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "sketchbook:choppy",
+      "text": "With Choppy you can easily remove many, many Trees from a Forest - and get the resources ot of it!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "How to get Choppy?",
+      "recipe": "sketchbook:choppy"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "sketchbook:treestroyer",
+      "text": "Forest goes bye-bye!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "C++ (Choppy++)",
+      "recipe": "sketchbook:treestroyer",
+      "text": "First of all, this thing is hard to get because: 1. It erases all Logs in a 150 Block radius and 2. The Items get dropped on the ground. You have been warned."
+    }
+  ]
+}
