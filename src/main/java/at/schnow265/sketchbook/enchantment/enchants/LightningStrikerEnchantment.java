@@ -1,4 +1,4 @@
-package net.schnow265.sketchbook.enchantment;
+package at.schnow265.sketchbook.enchantment.enchants;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -13,12 +13,12 @@ public class LightningStrikerEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(!user.world.isClient()) {
-            ServerWorld world = (ServerWorld)user.world;
+        if(!user.getWorld().isClient()) {
+            ServerWorld world = (ServerWorld) user.getWorld();
             BlockPos position = target.getBlockPos();
 
             for (int i = 0; i < level; i++) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, null, position, SpawnReason.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, position, null);
             }
 
         }
@@ -28,7 +28,7 @@ public class LightningStrikerEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 10;
+        return 25;
     }
     
     @Override
@@ -38,7 +38,7 @@ public class LightningStrikerEnchantment extends Enchantment {
 
     @Override
     public boolean isAvailableForEnchantedBookOffer() {
-        return true;
+        return false;
     }
 
     @Override

@@ -25,7 +25,7 @@ public class PullEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if (user.().isClient) {
+        if (user.velocityModified) {
             return;
         }
 
