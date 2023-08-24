@@ -3,7 +3,7 @@ package at.schnow265.sketchbook.item;
 
 import at.schnow265.sketchbook.drawbook;
 import at.schnow265.sketchbook.item.custom.MetalDetectorItem;
-import at.schnow265.sketchbook.item.custom.TreeStroyer;
+import at.schnow265.sketchbook.item.custom.choppers.TreeStroyer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -12,7 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-import at.schnow265.sketchbook.item.custom.TreeChopper;
+import at.schnow265.sketchbook.item.custom.choppers.TreeChopper;
 
 public class ModItems {
     //Weapons
