@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "snr",
+    "ncn",
+    "ens"
+  ],
+  "key": {
+    "c": {
+      "item": "sketchbook:choppy"
+    },
+    "n": {
+      "item": "minecraft:netherite_block"
+    },
+    "s": {
+      "item": "minecraft:nether_star"
+    },
+    "r": {
+      "item": "sketchbook:ruby"
+    },
+    "e": {
+      "item": "minecraft:elytra"
+    }
+  },
+  "result": {
+    "item": "sketchbook:treestroyer",
+    "count": 1
+  }
+}

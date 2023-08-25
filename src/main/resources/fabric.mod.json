@@ -28,14 +28,14 @@
     "fabric": "*",
     "minecraft": "1.20.1",
     "java": ">=17",
-    "trinkets": "*",
-    "patchouli": "*"
+    "trinkets": "*"
   },
   "breaks": {
     "optifine": "*",
     "optifabric": "*"
   },
   "suggests": {
-    "rei": "*"
+    "rei": "*",
+    "patchouli": "*"
   }
 }

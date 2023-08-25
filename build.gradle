@@ -53,7 +53,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modImplementation "dev.emi:trinkets:3.7.0"
-	modImplementation "vazkii.patchouli:Patchouli:1.20.1-81-FABRIC"
+	//modImplementation "vazkii.patchouli:Patchouli:1.20.1-81-FABRIC"
 }
 
 processResources {
@@ -145,9 +145,9 @@ modrinth {
 	dependencies {
 		required.project "fabric-api"
 		required.project "trinkets"
-		required.project "patchouli"
 
 		optional.project "rei"
+		optional.project "patchouli"
 	}
 }
 
@@ -156,7 +156,6 @@ task ReleasePublication {
 	description "Publishes Mod to GitHub and Modrinth"
 
 	ReleasePublication.dependsOn publishAllPublicationsToReleaseRepository
-	ReleasePublication.dependsOn modrinth
 
 	doLast {
 		println 'Mods Published! Get ready to Download!'
