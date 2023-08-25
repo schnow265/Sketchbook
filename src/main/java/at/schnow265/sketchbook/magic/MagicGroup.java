@@ -16,4 +16,8 @@ public class MagicGroup {
                         //entries.add(ModItems.);
                         entries.add(MagicItems.PHYSICAL_MANA);
                     }).build());
+
+    public static void registerItemGroups() {
+        drawbook.LOGGER.info("Registering Item Groups for " + drawbook.MOD_ID);
+    }
 }

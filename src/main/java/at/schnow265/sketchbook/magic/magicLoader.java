@@ -8,6 +8,7 @@ public class magicLoader {
         drawbook.LOGGER.info("Registering Magic for " + drawbook.MOD_ID);
 
         MagicItems.registerMagicItemsToMod();
+        MagicGroup.registerItemGroups();
 
         drawbook.LOGGER.info("Done Registering Magic for " + drawbook.MOD_ID);
     }
