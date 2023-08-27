@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-This Repo will *only* support current versions, backporting is not planed.
+This Repo will *only* support current versions, backporting is not planed. Also not porting to the Modloader called *Forge*
 
 | Version | Supported          |
 | ------- | ------------------ |

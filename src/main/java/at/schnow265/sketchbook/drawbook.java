@@ -4,7 +4,6 @@ import at.schnow265.sketchbook.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 import at.schnow265.sketchbook.enchantment.enchanter;
 import at.schnow265.sketchbook.item.ModItems;
-import at.schnow265.sketchbook.magic.magicLoader;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +22,6 @@ public class drawbook implements ModInitializer {
 
 		ModItems.registerModItems();
 		enchanter.registerEchanter();
-		magicLoader.registerMagic();
 
 		LOGGER.info("Blueprints loaded!"); // If this message appears in your Logs, my mod is not the crash cause.
 	}
