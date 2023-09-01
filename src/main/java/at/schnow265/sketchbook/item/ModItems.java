@@ -28,10 +28,6 @@ public class ModItems {
     public static final Item TREESTROYER = registerItem("treestroyer", new TreeStroyer(ToolMaterials.NETHERITE,500,50f, new FabricItemSettings()));
     public static final Item IA_SHOVEL = registerItem("ia_shovel", new ShovelItem(ToolMaterials.IRON, 0, (int) 1.15f, new FabricItemSettings()));
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(drawbook.MOD_ID, name), item);
-    }
-
     //And it's made by Kaupen-Eye-Joe
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
@@ -39,6 +35,8 @@ public class ModItems {
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
 
+
+    //Registering
     public static void ItemAdder() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
             content.add(ModItems.A_KNUCKLES);
@@ -61,8 +59,9 @@ public class ModItems {
             content.add(ModItems.TREESTROYER);
         });
     }
-
-    //Registering
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(drawbook.MOD_ID, name), item);
+    }
     public static void registerModItems() {
         ItemAdder();
         ModItemGroup.registerItemGroups();
