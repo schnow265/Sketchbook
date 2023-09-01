@@ -33,7 +33,7 @@ run/
 
 # other crap you wouldn´t like
 
-*.properties
+gradle.properties
 .obsidian/
 *.lock
 /.idea/
