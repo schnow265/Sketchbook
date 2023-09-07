@@ -1,7 +1,7 @@
 {
   "name": "Fast Wood.",
   "icon": "sketchbook:choppy",
-  "category": "sketchbook:blueprints",
+  "category": "sketchbook:weapons",
   "pages": [
     {
       "type": "patchouli:text",

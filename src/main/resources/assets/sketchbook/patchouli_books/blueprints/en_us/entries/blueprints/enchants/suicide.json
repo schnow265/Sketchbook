@@ -1,0 +1,15 @@
+{
+  "name": "That's a bad Idea.",
+  "icon": "sketchbook:enchanted_book",
+  "category": "sketchbook:enchants",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This is an enchantment to 'mess' with players, Wardens and some more entities."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This enchantment summons three TNT per level and add the following effects to the Target: Resistance, to not kill them from the TNT; Glowing, to see them falling down from 3000+ Blocks; Slowness, Blindness, Darkness and Weakness to keep them in place. And instant Health, to give them temporary extra health, to stop them from dying to the explosion, if resistance doesn't work."
+    }
+  ]
+}

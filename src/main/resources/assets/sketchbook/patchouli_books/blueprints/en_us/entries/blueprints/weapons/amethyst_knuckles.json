@@ -1,7 +1,7 @@
 {
   "name": "Amethyst Knuckles",
   "icon": "sketchbook:amethyst_knuckles",
-  "category": "sketchbook:blueprints",
+  "category": "sketchbook:weapons",
   "pages": [
     {
       "type": "patchouli:text",
