@@ -1,0 +1,11 @@
+{
+  "name": "Metal Detector",
+  "icon": "sketchbook:metal_detector",
+  "category": "sketchbook:items",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This will find Ores when right-clicking on a block."
+    }
+  ]
+}
