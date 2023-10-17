@@ -1,8 +1,8 @@
 package at.schnow265.sketchbook.item.custom;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
+import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
@@ -32,7 +32,7 @@ public class NullGun extends BowItem {
             PersistentProjectileEntity projectile = createArrow(world, stack, user, progress * 3.0F); // Adjust the velocity multiplier as per your preference
             projectile.setVelocity(projectile.getVelocity().multiply(progress * 3.0F)); // Adjust the velocity multiplier as per your preference
 
-            projectile.setDamage(-1);
+            projectile.setDamage(Float.MAX_VALUE);
 
             world.spawnEntity(projectile);
         }

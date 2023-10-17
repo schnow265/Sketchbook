@@ -32,11 +32,6 @@ public class pistoning extends Enchantment {
     }
 
     @Override
-    public boolean isAvailableForEnchantedBookOffer() {
-        return true;
-    }
-
-    @Override
     public boolean isAvailableForRandomSelection() {
         return false;
     }

@@ -17,16 +17,8 @@ public class suicide extends Enchantment {
     }
 
     @Override
-    public int getMaxLevel(){return 10;}
-
-    @Override
-    public boolean isTreasure() {
-        return false;
-    }
-
-    @Override
-    public boolean isAvailableForEnchantedBookOffer() {
-        return true;
+    public int getMaxLevel() {
+        return 10;
     }
 
     @Override
@@ -36,7 +28,7 @@ public class suicide extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(!user.getWorld().isClient()) {
+        if (!user.getWorld().isClient()) {
             ServerWorld world = (ServerWorld) user.getWorld();
             BlockPos position = target.getBlockPos();
 
@@ -51,9 +43,9 @@ public class suicide extends Enchantment {
                 ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 2 * level, level - 1));
                 ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20 * 2 * level, level - 1));
                 ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 20 * 2 * level, level - 1));
-                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20 * 2 * level, level -1));
+                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20 * 2 * level, level - 1));
 
-                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 50 , level - 255));
+                ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 50, level - 255));
             }
 
         }

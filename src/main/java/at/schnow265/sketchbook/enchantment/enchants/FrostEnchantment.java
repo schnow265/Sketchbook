@@ -10,7 +10,7 @@ import net.minecraft.entity.effect.StatusEffects;
 
 public class FrostEnchantment extends Enchantment {
     public FrostEnchantment(Rarity weight, EnchantmentTarget weapon, EquipmentSlot... slot) {
-        super(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+        super(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
 
@@ -25,7 +25,7 @@ public class FrostEnchantment extends Enchantment {
     }
 
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(target instanceof LivingEntity) {
+        if (target instanceof LivingEntity) {
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 2 * level, level - 1));
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20 * 2 * level, level - 1));
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 20 * 2 * level, level - 1));

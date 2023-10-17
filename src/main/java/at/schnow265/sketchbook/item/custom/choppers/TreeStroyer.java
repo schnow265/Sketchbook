@@ -1,5 +1,6 @@
 package at.schnow265.sketchbook.item.custom.choppers;
 
+import at.schnow265.sketchbook.drawbook;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
@@ -23,9 +24,7 @@ public class TreeStroyer extends AxeItem {
         PlayerEntity player = context.getPlayer();
         if (player != null && !player.isSneaking()) {
             Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
-            if (block.equals(Blocks.OAK_LOG) || block.equals(Blocks.SPRUCE_LOG) || block.equals(Blocks.BIRCH_LOG) ||
-                    block.equals(Blocks.JUNGLE_LOG) || block.equals(Blocks.ACACIA_LOG) || block.equals(Blocks.DARK_OAK_LOG) || block.equals(Blocks.MANGROVE_LOG)
-                    || block.equals(Blocks.CHERRY_LOG)) {
+            if (block.equals(Blocks.OAK_LOG) || block.equals(Blocks.SPRUCE_LOG) || block.equals(Blocks.BIRCH_LOG) || block.equals(Blocks.JUNGLE_LOG) || block.equals(Blocks.ACACIA_LOG) || block.equals(Blocks.DARK_OAK_LOG) || block.equals(Blocks.MANGROVE_LOG) || block.equals(Blocks.CHERRY_LOG)) {
                 // The block is a log block
                 context.getWorld().breakBlock(context.getBlockPos(), true, player);
                 int radius = 350; // the radius of the tree
@@ -39,6 +38,7 @@ public class TreeStroyer extends AxeItem {
                         }
                     }
                 }
+                drawbook.LOGGER.info("If you are reading this, you did this to yourself!");
                 return ActionResult.SUCCESS;
             }
         }
@@ -47,7 +47,7 @@ public class TreeStroyer extends AxeItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-            tooltip.add(Text.translatable("tooltips.ts.warning").formatted(Formatting.RED, Formatting.BOLD));
+        tooltip.add(Text.translatable("tooltips.ts.warning").formatted(Formatting.RED, Formatting.BOLD));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
