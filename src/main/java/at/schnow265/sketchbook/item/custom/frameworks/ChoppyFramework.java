@@ -18,8 +18,7 @@ public class ChoppyFramework extends AxeItem {
         PlayerEntity player = context.getPlayer();
         if (player != null && !player.isSneaking()) {
             Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
-            if (block.equals(Blocks.OAK_LOG) || block.equals(Blocks.SPRUCE_LOG) || block.equals(Blocks.BIRCH_LOG) ||
-                    block.equals(Blocks.JUNGLE_LOG) || block.equals(Blocks.ACACIA_LOG) || block.equals(Blocks.DARK_OAK_LOG) || block.equals(Blocks.MANGROVE_LOG)) {
+            if (block.equals(Blocks.OAK_LOG) || block.equals(Blocks.SPRUCE_LOG) || block.equals(Blocks.BIRCH_LOG) || block.equals(Blocks.JUNGLE_LOG) || block.equals(Blocks.ACACIA_LOG) || block.equals(Blocks.DARK_OAK_LOG) || block.equals(Blocks.MANGROVE_LOG)) {
                 // The block is a log block
                 context.getWorld().breakBlock(context.getBlockPos(), true, player);
                 int radius = 5; // the radius of the tree

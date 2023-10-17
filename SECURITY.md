@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-This Repo will *only* support current versions, backporting is not planed. Also not porting to the Modloader called *Forge*
+This Repo will *only* support current versions, backporting is not planed. Also, not porting to other Modloaders.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -11,4 +11,4 @@ This Repo will *only* support current versions, backporting is not planed. Also 
 
 ## Reporting a Vulnerability
 
-Issues -> Bugs
+[Issues -> Bugs](mailto:thesnowbox@icloud.com?subject=Code%20Vulnerability)

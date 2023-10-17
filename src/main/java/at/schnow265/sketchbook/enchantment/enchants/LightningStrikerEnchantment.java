@@ -13,7 +13,7 @@ public class LightningStrikerEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(!user.getWorld().isClient()) {
+        if (!user.getWorld().isClient()) {
             ServerWorld world = (ServerWorld) user.getWorld();
             BlockPos position = target.getBlockPos();
 
@@ -30,7 +30,7 @@ public class LightningStrikerEnchantment extends Enchantment {
     public int getMaxLevel() {
         return 25;
     }
-    
+
     @Override
     public boolean isTreasure() {
         return true;

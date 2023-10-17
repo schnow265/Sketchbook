@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "sketchbook",
   "version": "${version}",
-
   "name": "Sketchbook",
   "description": "Little things with big impact",
   "authors": [
@@ -12,23 +11,19 @@
     "homepage": "https://github.com/schnow265/sketchbook",
     "sources": "https://github.com/schnow265/sketchbook"
   },
-
   "license": "MIT Custom",
   "icon": "assets/sketchbook/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
       "at.schnow265.sketchbook.drawbook"
     ]
   },
-
   "depends": {
     "fabricloader": ">=0.14.21",
     "fabric": "*",
-    "minecraft": "1.20.1",
-    "java": ">=17",
-    "trinkets": "*"
+    "minecraft": "1.20.2",
+    "java": ">=17"
   },
   "breaks": {
     "optifine": "*",
@@ -36,6 +31,7 @@
   },
   "suggests": {
     "rei": "*",
-    "patchouli": "*"
+    "patchouli": "*",
+    "sodium": "*"
   }
 }
