@@ -20,7 +20,7 @@ public class enchanter {
     public static Enchantment PULL = register("pull", new PullEnchantment(Enchantment.Rarity.COMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
     public static Enchantment FROSTY = register("frosty", new FrostEnchantment(Enchantment.Rarity.COMMON, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
     public static Enchantment SUICIDE = register("suicide", new suicide(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-    public static Enchantment LEAD_BOOTS = register("lead_boots", new LeadFeet(Enchantment.Rarity.COMMON, ProtectionEnchantment.Type.FALL, EquipmentSlot.FEET));
+    public static Enchantment FEATHER_FOOT = register("feather_foot", new FeatherFeet(Enchantment.Rarity.COMMON, ProtectionEnchantment.Type.FALL, EquipmentSlot.FEET));
 
     // Registering Enchantments
     private static Enchantment register(String name, Enchantment enchantment) {

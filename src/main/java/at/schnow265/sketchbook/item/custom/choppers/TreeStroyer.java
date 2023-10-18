@@ -38,7 +38,7 @@ public class TreeStroyer extends AxeItem {
                         }
                     }
                 }
-                drawbook.LOGGER.info("If you are reading this, you did this to yourself!");
+                drawbook.LOGGER.warn("If you are reading this, you did this to yourself!");
                 return ActionResult.SUCCESS;
             }
         }
