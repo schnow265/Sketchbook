@@ -25,6 +25,7 @@ community include:
 * Focusing on what is best not just for us as individuals, but for the
   overall community
 * Not Harassing the devs over **any** form on Communication
+* Usingf propper Naming for your GitHub issues, and paste sites for crash logs
 
 Examples of unacceptable behavior include:
 
@@ -37,6 +38,7 @@ Examples of unacceptable behavior include:
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
 * Spamming the Inbox of my E-Mail.
+* Writing an Issue with the title *pls help*, dumping your crash log in the text field, and not providing any assistance.
 
 ## Enforcement Responsibilities
 
