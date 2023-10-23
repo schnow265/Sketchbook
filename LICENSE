@@ -1,32 +1,70 @@
-MIT License
+Copyright (c) 2022-2023 schnow265
+thesnowbox[at]icloud.com
 
-Copyright (c) 2023 schnow265
+THIS SOFTWARE/CODE IS HEREBY GRANTED FREE OF CHARGE TO ANYONE, 
+WHO DOESN'T VIOLATE OF OF THE FOLLOWING LICENCES:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, sublicense, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+I HATE SOME PEOPLE LICENSE
+==========================
+0. Definition
+-------------
+If your Name is on this list, you aren't allowed to obtain, develop and use this Software
+
+1. Prohibited Purposes
+----------------------
+- Your Name is Daniel
+
+2. Excuse
+---------
+For unknowingly breaking these Licence terms, I demmand a well-written apology letter per mail to the address thesnowbox[at]icloud.com within thirty days of notifying you.
+After these thirty days, I demmand the letter in latin.
+
+3. Exeptions
+------------
+If you write a well-worded letter to explain why you should use this piece of software, then I will grant you an exeption for your purpose.
+
+
+
+THE UNWRITTEN LICENCE
+=====================
+
+
+
+
+PLEASE PUBLIC LICENCE
+=====================
+You must ask the copyright holder to modify the Code.
+
+
+
+WHY THE FUCK WOULD YOU EVEN DO THAT HOLY SHIT LICENCE
+=====================================================
+0. Definition
+-------------
+Everything not prohibited is permitted.
+
+1. Prohibited Purposes
+----------------------
+1. You may not rewrite / port this Software to older Vewrsions of Minecraft and Forge.
+
+2. Excuse
+---------
+You're excused for unknowingly breaking Notices if you take all practical steps to comply within thirty days of learning you broke the rule.
+
+3. Reliability
+--------------
+No contributor can revoke this license.
 
 
 
 Minecraft Mod Public License
 ============================
-Version 1.5.1b
+Version 1.0.1
 
 0. Definition
---------------
+-------------
 Minecraft: Denotes a copy of the Minecraft game licensed by Mojang AB
 User: Anybody that interacts with the software in one of the following ways:
    - play
@@ -81,11 +119,11 @@ include:
      resulting from source modifications
    - patch to its source or binary files
    - any copy of a portion of its binary source files
-The user is allowed to redistribute this mod partially, in totality, or
+The user is allowed to redistribute this mod partially or
 included in a distribution.
 When distributing binary files, the user must provide means to obtain its
 entire set of sources or modified sources at no costs.
-All distributions of this mod must remain licensed under the MMPL.
+All distributions of this mod must remain licensed under the MMPL (Minecraft Mod Public Licence).
 All dependencies that this mod have on other mods or classes must be licensed
 under conditions comparable to this version of MMPL, with the exception of the
 Minecraft code and the mod loading framework (e.g. ModLoader, ModLoaderMP or
@@ -93,3 +131,4 @@ Bukkit).
 Modified version of binaries and sources, as well as files containing sections
 copied from this mod, should be distributed under the terms of the present
 license.
+
