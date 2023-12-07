@@ -13,8 +13,8 @@ public class LightningStrikerEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if (!user.getWorld().isClient()) {
-            ServerWorld world = (ServerWorld) user.getWorld();
+        if (!user.method_48926().isClient()) {
+            ServerWorld world = (ServerWorld) user.method_48926();
             BlockPos position = target.getBlockPos();
 
             for (int i = 0; i < level; i++) {
